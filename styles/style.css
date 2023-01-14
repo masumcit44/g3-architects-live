@@ -1,4 +1,18 @@
 /* css style starts */
+/* common style starts */
+body {
+  font-family: "Work Sans";
+}
+.btn-primary {
+  background: #ff900e;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 10px;
+}
+/* common style ends */
 /* nav-bar-container starts */
 .nav-bar-container {
   display: flex;
@@ -10,21 +24,21 @@
   display: flex;
   width: 100%;
   justify-content: space-around;
+  margin-bottom: 116px;
 }
 .nav-bar-heading h2 {
   font-weight: 700;
   font-size: 45px;
-  font-family: "Work Sans";
   color: #131313;
 }
-.nav-bar-navs{
-    display: flex;
-    align-items: center;
+.nav-bar-navs {
+  display: flex;
+  align-items: center;
 }
 .nav-bar-navs nav ul {
   display: flex;
   gap: 20px;
-  padding-left:0 ;
+  padding-left: 0;
 }
 .nav-bar-navs nav ul li {
   list-style: none;
@@ -34,11 +48,51 @@
   color: #424242;
   font-weight: 500;
   font-size: 18px;
-  font-family: 'Work Sans';
 }
 /* nav-bar-container ends */
+/* 
+----
+----
+----
+----
+---- 
+*/
+/*  header-banner-container starts */
+.header-banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-banner-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-banner-title h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 64px;
+  color: #131313;
+}
+.header-banner-title p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+  margin-bottom: 32px;
+}
+.header-banner-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.header-banner-img img {
+  height: 500px;
+  width: 900px;
+}
+/*  header-banner-container ends  */
 /* css style ends */
-
 
 /* 
 ----
@@ -49,14 +103,28 @@
 */
 
 /* css responsive style starts */
-@media only screen and (max-width:576px) {
-    /* nav-bar-container starts */
-    .nav-bar{
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    /* nav-bar-container ends */
-    
+@media only screen and (max-width: 576px) {
+  /* nav-bar-container starts */
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-bar-navs nav ul {
+    flex-direction: column;
+  }
+  /* nav-bar-container ends */
+  /* 
+----
+----
+----
+----
+---- 
+*/
+  /*  header-banner-container starts */
+  .header-banner-img img {
+    width: 100%;
+    height: 300px;
+  }
+  /*  header-banner-container ends  */
 }
 /* css responsive style ends  */
