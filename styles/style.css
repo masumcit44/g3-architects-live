@@ -158,7 +158,7 @@ main {
 ---- 
 */
 /* main-item-2 starts */
-.main-item-2 {
+.main-item-2  {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -455,7 +455,7 @@ main {
 */
   /* main-item-2 starts */
   .main-item-2-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .footer-item-2 :hover {
     background-color: #f18000;
